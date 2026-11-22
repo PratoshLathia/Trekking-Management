@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Celery Beat's own schedule file, and this app's background-job output
+celerybeat-schedule*
+reports/
+exports/

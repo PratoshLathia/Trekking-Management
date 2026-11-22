@@ -1,0 +1,105 @@
+:root {
+  --brand-green: #173b2b;
+  --brand-gold: #f2b705;
+  --brand-gold-dark: #d9a400;
+  --brand-heading: #16261e;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 18px/145% var(--sans);
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #3f4a44;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--brand-heading);
+}
+
+p {
+  margin: 0;
+}
+
+
+.form-control,
+.form-select,
+.form-check-label,
+label,
+.table th,
+.table td {
+  text-align: left;
+}
+
+#app {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+
+table {
+  margin: 0 auto;
+}
+
+
+.navbar-brand-theme {
+  background-color: var(--brand-green) !important;
+}
+
+.navbar-brand-theme .navbar-brand,
+.navbar-brand-theme .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand-theme .nav-link:hover {
+  color: var(--brand-gold) !important;
+}
+
+
+.btn-brand-gold {
+  background-color: var(--brand-gold);
+  border-color: var(--brand-gold);
+  color: #1f2a22;
+  font-weight: 600;
+}
+
+.btn-brand-gold:hover,
+.btn-brand-gold:focus {
+  background-color: var(--brand-gold-dark);
+  border-color: var(--brand-gold-dark);
+  color: #1f2a22;
+}
+
+.btn-brand-outline-light {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-brand-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+
+.badge-brand-active {
+  background-color: #1c6e4a;
+}
+
+.badge-brand-inactive {
+  background-color: #8a8378;
+}
